@@ -504,6 +504,13 @@ img{
     gap: 1vw;
 }
 
+.area6 .inner .box img {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
 
 
 /* area7----------------------------------------------------------------------------------- */
