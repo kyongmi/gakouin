@@ -47,6 +47,10 @@ img {
     object-fit: contain;
 }
 
+.h1 {
+
+}
+
 p{
     font-size: 1.2vw;
     font-weight: 400;
@@ -83,7 +87,9 @@ p{
 .title {
     font-family: "Hina Mincho", serif;
     font-weight: 400;
-    font-size: 85px;
+    font-size: 6vw;
+    text-align: center;
+    line-height: 7vw;
 }
 
 .text{
@@ -207,12 +213,23 @@ img{
   z-index: 100;
 }
 
+
 .header.fixed {
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 見やすくする影 */
 }
+
+.no_top {
+    width: 100%;
+position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 見やすくする影 */
+  z-index: 100;
+}
+
 
 .header .logo {
     width: 12vw;
@@ -252,6 +269,7 @@ img{
   opacity: 1;
   z-index: 1;
 }
+
 
 .main-visual img {
   width: 100%;
@@ -877,50 +895,1079 @@ details + details {
 /* footer------------------------------- */
 
 .page_footer {
-    background-image: url(../images/20250529_1303.png);
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    margin: 50px;
-    border-radius: 30px;
-    height: 240px;
-    padding: 30px;
+    background-color: #262626;
+    padding: 5vw;
+}
 
+.page_footer .container {
+    display: flex;
+    gap: 3vw;
+}
+
+.page_footer .l {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    width: 66%;
+}
+
+.page_footer .r  {
+    width: 33%;
 }
 
 .page_footer img {
-    width: 50%;
+    width: 80%;
+}
+
+.page_footer .komidasi {
+    font-family: "Hina Mincho", serif;
+    font-size: 1.8vw;
+    color: #ffffff;
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-bottom: solid #AEAEAE 0.12vw;
 }
 
 .page_footer .text {
     color: #ffff;
+    font-size: 1vw;
 }
 
-.page_footer .l {
+.page_footer .copy {
+    color: #ffffff;
+    font-size: 1vw;
+    text-align: center;
+    padding-top: 5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ブランドストーリー
+=============================================================================ブランドストーリー */
+
+
+/* area1----------------------------------------------------------------------------------- */
+
+.brand_area1 {
+    margin-top: 10vw;
+    padding: 5vw 0;
+}
+
+.brand_area1 .text {
+    text-align: center;
+    font-family: "Hina Mincho", serif;
+    padding-top: 5vw;
+}
+
+.brand_area1 img {
+    height: 25vw;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 5vw;
+}
+
+
+/* area2----------------------------------------------------------------------------------- */
+
+.brand_area2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.brand_area2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vw 0;
+}
+
+.brand_area2 .midasi_box {
+    align-items: flex-start;
+}
+
+.brand_area2 .midasi {
+    text-align: start;
+}
+
+.brand_area2 .roma {
+    text-align: start;
+}
+
+.brand_area2 .container .r {
+    width: 50%;
+}
+
+.brand_area2 .container img {
+    height: 25vw;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.brand_area2 .container2 {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 4vw 2vw;
+}
+
+.brand_area2 .container2 .l{
+    display: flex;
+}
+
+.brand_area2 .container2 .l .box {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0 2vw;
+    gap: 1.5vw;
+}
+
+.brand_area2 .container2 .l .box:nth-of-type(2){
+    border-left: solid #aeaeae 0.12vw;
+    border-right: solid #aeaeae 0.12vw;
+}
+
+.brand_area2 .container2 .l .komidasi {
+    font-family: "Hina Mincho", serif;
+    font-size: 2vw;
+}
+
+.brand_area2 .container2 .r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vw;
+}
+
+
+/* area3----------------------------------------------------------------------------------- */
+
+.brand_area3 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+
+.brand_area3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vw 0;
+}
+
+.brand_area3 .midasi_box {
+    align-items: flex-start;
+}
+
+.brand_area3 .midasi {
+    text-align: start;
+}
+
+.brand_area3 .roma {
+    text-align: start;
+}
+
+.brand_area3 .container .l {
+    width: 50%;
+}
+
+.brand_area3 .container .r {
+    width: 40%;
+}
+
+.brand_area3 .container img {
+    height: 42vw;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.brand_area3 .box {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 5vw;
+    margin-bottom: 5vw;
+}
+
+.brand_area3 .text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.brand_area3 .text_box img{
+    width: 30%;
+    margin-left: 8vw;
+    
+}
+
+.brand_area3 .img_box {
+    display: flex;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 25vw;
+}
+
+.brand_area3 .img_box img {
+    width: 50%;
+    object-fit: cover;
+}
+
+
+
+/* area4----------------------------------------------------------------------------------- */
+
+.brand_area4 {
+    padding: 5vw 0;
+}
+
+.brand_area4 .title {
+    margin-bottom: 5vw;
+}
+
+.brand_area4 p {
+    text-align: center;
+}
+
+
+/* area5----------------------------------------------------------------------------------- */
+
+.brand_area5 {
+    background-image: url(../images/20250727_1342.png);
+    background-size: cover;
+    padding: 10vw 0;
+    margin: 5vw 0;
+}
+
+.brand_area5 .inner {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.brand_area5 .midasi_box {
+    align-items: flex-start;
+}
+
+.brand_area5 p {
+    color: #ffff;
+}
+
+.brand_area5 .midasi {
+    text-align: start;
+}
+
+.brand_area5 .roma {
+    color:  #ffffff50;
+    text-align: start;
+}
+
+.w_b {
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+
+/* area6----------------------------------------------------------------------------------- */
+
+.brand_area6 {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 5vw;
+    margin-bottom: 5vw;
+}
+
+.brand_area6 .midasi_box {
+    align-items: flex-start;
+}
+
+.brand_area6 .midasi {
+    text-align: start;
+}
+
+.brand_area6 .roma {
+    text-align: start;
+}
+
+.brand_area6 .box {
+    display: flex;
+    height: ;
+}
+
+.brand_area6 .box .l {
+    width: 20%;
+    padding-right: 3vw;
+}
+
+.brand_area6 .box .r {
+    width: 80%;
+    padding-left: 3vw;
+    padding-bottom: 3vw;
+    border-left: solid #aeaeae 0.12vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ご贈答について
+=============================================================================ご贈答について */
+
+.sub {
+    margin-top: 10vw;
+    padding: 5vw 0;
+    width: 100%;
+}
+
+
+/* area1----------------------------------------------------------------------------------- */
+
+.gozoto_area1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.gozoto_area1 .box {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 2.5vw;
+    
+}
+
+.gozoto_area1 .box2 {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 2.5vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    
+}
+
+
+.gozoto_area1 .container {
+    display: flex;
+    gap: 1vw;
+    margin: 1vw 0;
+}
+
+.gozoto_area1 .container .box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 30vw;
+    width: 33%;
+}
+
+.gozoto_area1 .komidasi {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.gozoto_area1 .box img {
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    transform: translate(-50%);
+    width: 18vw;
+    height: auto;
+}
+
+.gozoto_area1 .container2 {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+.gozoto_area1 .container2 .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.gozoto_area1 .container2 .box:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+.gozoto_area1 .container2 img {
+    position: static;
+    transform: none;
+}
+
+.gozoto_area1 .container2 .box:nth-of-type(1) img {
+    width: 15vw;
+}
+
+.gozoto_area1 .container2 .box:nth-of-type(2) img {
+    width: 28vw;
+}
+
+.gozoto_area1 .container2 .komidasi {
+    margin-bottom: 1vw;
+}
+
+.gozoto_area1 .box2 img {
+    width: 50%;
+}
+
+.gozoto_area1 .box2  .komidasi {
+    margin-bottom: 1vw;
+}
+
+
+
+/* area2----------------------------------------------------------------------------------- */
+
+.gozoto_area2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.gozoto_area2 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50vw;
+    margin: 0 auto;
+    gap: 1vw;
+}
+
+.gozoto_area2 .box {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 2.5vw;
+    
+}
+
+.gozoto_area2 .name_box {
+    display: flex;
+    align-items: center;
+    border-bottom: solid #AEAEAE 0.12vw;
+    padding-bottom: 1.5vw;
+    gap: 1vw;
+}
+
+.gozoto_area2 .icon {
+    width: 3vw;
+}
+
+.gozoto_area2 .star {
+    width: 10vw;
+}
+
+.gozoto_area2 .komidasi {
+    font-family: "Hina Mincho", serif;
+    color: #875427;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+
+.gozoto_area2 .text_box {
+    padding-top: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*召し上がり方
+=============================================================================召し上がり方 */
+
+/* area1----------------------------------------------------------------------------------- */
+
+
+.eat_area1 {
+    width: 70%;
+    margin:  0 auto;
+    padding: 5vw 0;
+}
+
+.eat_area1 .container {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 2.5vw;
+}
+
+.eat_area1 .komidasi {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-bottom: 1vw;
+    border-bottom: solid #AEAEAE 0.12vw;
+    margin-bottom: 3vw;
+}
+
+.eat_area1 .komidasi:nth-of-type(2){
+    margin-top: 12vw;
+}
+
+.eat_area1  .b {
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.eat_area1 .midasi_box p {
+    text-align: center;
+}
+
+.eat_area1 .no {
+    height: 3.5vw ;
+    width: 3.5vw ;
+    font-size: 2vw;
+    background-color: #262626;
+    border-radius: 100vw;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.eat_area1 .container .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6vw;
+    margin-bottom: 3vw;
+}
+
+
+.eat_area1 .container .box .r {
+    width: 25%;
+}
+
+.eat_area1 .container .box .l {
+    display: flex;
+    gap: 2vw;
+    width: 75%;
+}
+
+
+/* area2----------------------------------------------------------------------------------- */
+
+.eat_area2 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.eat_area2 .midasi_box p {
+    text-align: center;
+}
+
+.eat_area2 .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*西京焼きについて
+=============================================================================西京焼きについて */
+
+/* area1----------------------------------------------------------------------------------- */
+
+
+.about_area1 {
+    margin-top: 10vw;
+    padding: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_area1 .midasi_box {
+    margin-top: 5vw;
+}
+
+.about_area1 .text {
+    text-align: center;
+    font-family: "Hina Mincho", serif;
+
+}
+
+.about_area1 img {
+    width: 6vw;
+    margin-top: 5vw;
+}
+
+
+/* area2----------------------------------------------------------------------------------- */
+
+.about_area2 {
+    background-color: #ffffff50;
+    padding: 8vw 0;
+}
+
+.about_area2 .title {
+    margin-bottom: 3vw;
+}
+
+.about_area2 .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin:  0 auto;
+}
+
+.about_area2 .komidasi {
+    font-family: "Hina Mincho", serif;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.about_area2 .img_1 {
+    margin: 5vw 0;
+    width: 60vw;
+}
+
+.about_area2 .btn_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 上段3列 */
+    grid-template-rows: auto auto;
+    gap: 1vw;
+   
+}
+
+.about_area2 .btn {
+    background-color: #262626;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+    height: 10vw;
+    padding: 1vw;
+    width: 21vw;
+}
+
+.about_area2 .btn p {
+    color: #ffffff;
+    font-family: "Hina Mincho", serif;
+}
+
+.about_area2 .btn .img {
+    height: 8vw;
+    width: 8vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.about_area2 .btn .yazirusi {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+}
+
+.about_area2 .container {
+    width: 100%;
+    margin: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.about_area2 .box {
+    background-color: #E0D9CC;
+    border-radius: 1vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
-.page_footer .r {
-    height: 100%;
+.about_area2 .komidasi_box {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    gap: 10px;
+    align-items: center;
+    margin-bottom: 2vw;
 }
 
-.page_footer .r p {
-    font-size: 12px;
-    color: #ffff;
+.about_area2 .komidasi_box .no {
+    background-color: #262626;
+    border-radius: 100vw;
+    padding: 0.2vw 2vw;
+    color: #ffffff;
+    width: fit-content;
+    margin-bottom: 1vw;
 }
-.page_footer .r a {
-    font-size: 12px;
-    color: #ffff;
+
+.about_area2 .box .naiyou {
+    display: flex;
+    align-items: center;
 }
+
+.about_area2 .box .naiyou .l {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.about_area2 .box .pass {
+    width: 0.12vw;
+    background-color: #aeaeae;
+    height: 15vw;
+    margin: 0 3vw 0 3vw;
+}
+
+.about_area2 .box .naiyou .l img {
+    width: 12vw;
+}
+
+.about_area2 .kokomidasi  {
+    font-family: "Hina Mincho", serif;
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.about_area2 .container_2 {
+    display: flex;
+    gap: 2vw;
+}
+
+.about_area2 .container_2 img {
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+
+.about_area2 .box .naiyou_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about_area2 .box .naiyou_2 .l {
+    width: 40%;
+}
+
+.about_area2 .box .naiyou_2 img {
+    border-radius: 1vw;
+    width: 50%;
+}
+
+.about_area2 .naiyou_3 {
+    width: 100%;
+}
+
+.about_area2 .container .box .naiyou_3:nth-of-type(3) {
+    margin-top: 5vw;
+}
+
+.about_area2 .naiyou_3 .u{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    position: relative;
+    margin-bottom: 3vw;
+}
+
+.about_area2 .naiyou_3 .u .osusume {
+    position: absolute;
+    top: -3vw;
+    left: -2vw;
+    z-index: 1;
+    width: 12vw;
+}
+
+.about_area2 .naiyou_3 .u .sakana {
+    height: 20vw;
+    width: 60%;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.about_area2 .naiyou_3 .name_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
+    position: relative;  
+}
+
+.about_area2 .naiyou_3 .name_box img {
+    position: absolute;
+    top: -5vw;
+    left: 50%;
+    transform: translate(-50%);
+    width: 18vw;
+    z-index: 0;
+}
+
+.about_area2 .naiyou_3 .name {
+    font-size: 4vw;
+    font-family: "Hina Mincho", serif;
+}
+
+
+/* area3----------------------------------------------------------------------------------- */
+
+.about_area3 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vw;
+}
+
+.about_area3 .midasi_box {
+    align-items: start;
+}
+
+.about_area3 .midasi {
+    text-align: start;
+}
+
+.about_area3 .roma {
+    text-align: start;
+}
+
+.about_area3 .r {
+    width: 40%;
+    height: max-content;
+}
+
+.about_area3 .r img {
+    height: 63vw;
+    object-fit: cover;
+}
+
+.about_area3 .l {
+    width: 40%;
+    margin-left: 15%;
+    padding: 8vw 0;
+}
+
+.about_area3 .box .text {
+    padding: 1.5vw 0 1vw 0;
+    border-bottom: solid #AEAEAE 0.12vw;
+}
+
+
+
+/* area4----------------------------------------------------------------------------------- */
+
+.about_area4 {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 5vw 0;
+}
+
+/* area5----------------------------------------------------------------------------------- */
+
+.about_area5 {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 2.5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.about_area5 .midasi_box {
+    width: 40%;
+    align-items: start;
+}
+
+.about_area5 .midasi {
+    text-align: start;
+}
+
+.about_area5 .roma {
+    text-align: start;
+}
+
+.about_area5 .box {
+    width: 60%;
+    position: relative;
+}
+
+.about_area5 .b_more {
+    position: absolute;
+    bottom: 0.5vw;
+    right: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ご利用案内
+=============================================================================ご利用案内 */
+
+/* area1----------------------------------------------------------------------------------- */
+
+.guide_area1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.guide_area1 .box {
+    background-color: #ffffff50;
+    border-radius: 1vw;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.guide_area1 .midasi {
+    text-align: center;
+}
+
+.guide_area1 .roma {
+    text-align: center;
+}
+
+.guide_area1 .midasi_box {
+    align-items: center;
+}
+
+.guide_area1 .pack {
+    width: 60%;
+    margin-top: 1vw;
+}
+
+.guide_area1 .komidasi {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-bottom: 1vw;
+    border-bottom: solid #AEAEAE 0.12vw;
+    margin-bottom: 3vw;
+}
+
+.guide_area1 h1 {
+    margin-bottom: 5vw;
+}
+
+.guide_area1 .qa {
+    padding: 2.5vw;
+    gap: 0vw;
+    margin-bottom: 1.5vw;
+}
+
+.guide_area1 .qa .komidasi {
+    display: flex;
+}
+
+.guide_area1 .qa .l {
+    width: 4%;
+    font-weight: 500;
+}
+.guide_area1 .qa .r {
+    width: 96%;
+}
+
+.guide_area1 .qa .komidasi {
+    margin-bottom: 1.5vw;
+}
+
+.guide_area1 .qa .komidasi p {
+    font-weight: 500;
+}
+
+.guide_area1 .qa .text_box {
+    display: flex;
+}
+
+
+
+
+
+
+
 
 
 /*モバイル版
@@ -963,10 +2010,6 @@ details + details {
         font-size: 3.5vw;
     }
 
-    .komidasi {
-        font-size: 25px;
-    }
-    
 
     .top_ga {
         margin: 10px 20px 20px 20px ;
@@ -975,13 +2018,8 @@ details + details {
 
 
     .title {
-        font-family: "Barlow Condensed", sans-serif;
-        font-size: 75px;
-        font-weight: 600;
-        color: #7490BE;
-        text-align: center;
-        line-height: 0.8em;
-        margin-bottom: 30px;
+        font-size: 9vw;
+        line-height: 12vw;
     }
 
     .kotitle {
@@ -1014,6 +2052,10 @@ details + details {
 
     .icon_box a {
         width: 5.6vw;
+    }
+
+    .icon_box a img {
+        width: 5.8vw !important;
     }
     
     /* 基本リセット */
@@ -1238,6 +2280,10 @@ details + details {
         gap: 6.5vw 2vw;
     }
 
+    .area6 .inner .box img {
+        height: 28vw;
+    }
+
 
     /* area7-------------------------------------------------------------- */
 
@@ -1247,6 +2293,7 @@ details + details {
 
     .area7 ul {
         padding: 2vw 2vw 2.2vw 2vw;
+        border-bottom: solid #AEAEAE 0.35vw;
     }
 
 
@@ -1340,4 +2387,720 @@ details + details {
 
 
 
+
+
+
+
+    /* footer-------------------------------------------------------------- */
+
+    .page_footer {
+        padding: 8vw;
+        margin-top: 12vw;
+    }
+
+    .page_footer .container {
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .page_footer .l {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 8vw;
+    }
+
+    .page_footer .text {
+        font-size: 3vw;
+    }
+
+    .page_footer .komidasi {
+        font-size: 3.5vw;
+        border-bottom: solid #AEAEAE 0.35vw;
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .page_footer .r {
+        width: 100%;
+    }
+
+    .page_footer .copy {
+        font-size: 3vw;
+        padding-top: 12vw;
+    }
+
+    .page_footer img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*ブランドストーリー
+    =============================================================================ブランドストーリー */
+
+
+    /* area1-------------------------------------------------------------- */
+
+    .brand_area1 {
+        margin-top: 15vw;
+        padding: 8vw 0;
+    }
+
+    .brand_area1 img {
+        height: 45vw;
+        padding-top: 12vw;
+    }
+
+    /* area2-------------------------------------------------------------- */
+
+    .brand_area2 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .brand_area2 .container {
+        flex-direction: column-reverse;
+        margin: 8vw 0;
+    }
+
+    .brand_area2 .container .r {
+        width: 100%;
+        margin-bottom: 8vw;
+    }
+
+    .brand_area2 .container img {
+        height: 50vw;
+    }
+
+    .brand_area2 .container2 {
+        padding: 0vw 6vw 8vw 6vw ;
+    }
+
+    .brand_area2 .container2 .l  {
+        flex-direction: column;
+    }
+
+    .brand_area2 .container2 .l .box:nth-of-type(2) {
+        border-left: none;
+        border-right: none;
+        border-top: solid #AEAEAE 0.35vw;
+        border-bottom: solid #AEAEAE 0.35vw;
+    }
+
+    .brand_area2 .container2 .l .komidasi {
+        font-size: 6vw;
+    }
+
+    .brand_area2 .container2 .l .box {
+        padding: 8vw 0;
+        gap: 3.5vw;
+    }
+
+
+    /* area3-------------------------------------------------------------- */
+
+
+    .brand_area3 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .brand_area3 .container {
+        flex-direction: column-reverse;
+        margin: 8vw 0;
+        gap: 8vw;
+    }
+
+    .brand_area3 .container:nth-of-type(2) {
+        flex-direction: column;
+        padding-top: 8vw;
+    }
+
+    .brand_area3 .container .r {
+        width: 100%;
+    }
+
+    .brand_area3 .container img {
+        height: 50vw;
+    }
+
+
+    .brand_area3 .container .l {
+        width: 100%;
+    }
+
+    .brand_area3 .box {
+        margin: 16vw 0;
+        padding: 6vw;
+    }
+
+    .brand_area3 .text_box {
+        gap: 8vw;
+    }
+
+    .brand_area3 .img_box {
+        height: 30vw;
+    }
+
+    .brand_area3 .text_box img {
+        width: 80%;
+        margin-left: 0vw;
+    }
+
+
+    /* area4-------------------------------------------------------------- */ 
+
+    .brand_area4 {
+        padding: 8vw 0;
+    }
+
+    .brand_area4 .midasi {
+        font-size: 6vw;
+    }
+
+
+    .brand_area5 {
+        padding: 12vw 0;
+    }
+
+    .brand_area5 .inner {
+        width: 80%;
+        gap: 8vw;
+    }
+
+    .w_b {
+        font-size: 4.5vw;
+    }
+
+    /* area5-------------------------------------------------------------- */ 
+
+    .brand_area5 .midasi_box {
+        margin-bottom: 0vw;
+    }
+
+
+    /* area6-------------------------------------------------------------- */ 
+
+    .brand_area6 {
+        width: 80%;
+        padding: 6vw;
+    }
+
+    .brand_area6 .box {
+        flex-direction: column;
+    }
+
+    .brand_area6 .box .l {
+        width: 100%;
+    }
+
+    .brand_area6 .box .r {
+        width: 100%;
+        padding: 3vw 0 8vw 5vw;
+        border-left: solid #aeaeae 0.35vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*ご贈答について
+    =============================================================================ご贈答について */
+
+
+    .sub {
+        margin-top: 15vw;
+        padding: 8vw 0;
+    }
+
+    .gozoto_area1 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .gozoto_area1 .container {
+        flex-direction: column;
+        gap: 3vw;
+        margin: 3vw 0;
+    }
+
+    .gozoto_area1 .container .box {
+        width: 100%;
+        height: 75vw;
+    }
+
+    .gozoto_area1 .container .box:nth-of-type(3) {
+        height: 85vw;
+    }
+
+    .gozoto_area1 .box {
+        padding: 6vw;
+    }
+
+    .gozoto_area1 .komidasi {
+        font-size: 4.5vw;
+    }
+
+    .gozoto_area1 .box img {
+        width: 56vw;
+        bottom: 6vw;
+    }
+
+    .gozoto_area1 .container2 {
+        gap: 3vw;
+        flex-direction: column;
+        margin-bottom: 3vw;
+    }
+
+    .gozoto_area1 .container2 .box {
+        width: 100%;
+        gap: 6vw;
+    }
+
+    .gozoto_area1 .container2 .box:nth-of-type(1) {
+        flex-direction: column;
+        gap: 6vw;
+    }
+
+    .gozoto_area1 .container2 .box:nth-of-type(1) img {
+        width: 100%;
+    }
+
+    .gozoto_area1 .container2 .komidasi {
+        margin-bottom: 3vw;
+    }
+
+    .gozoto_area1 .container2 .box:nth-of-type(2) img {
+        width: 100%;
+    }
+
+    .gozoto_area1 .box2 {
+        flex-direction: column;
+        padding: 6vw;
+        gap: 6vw;
+    }
+
+    .gozoto_area1 .box2 img {
+        width: 100%;
+    }
+
+
+
+
+    .gozoto_area2 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .gozoto_area2 .container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .gozoto_area2 .box {
+        padding: 6vw;
+    }
+
+    .gozoto_area2 .icon {
+        width: 10vw;
+    }
+
+    .gozoto_area2 .star {
+        width: 20vw;
+    }
+
+    .gozoto_area2 .name_box {
+        gap: 3vw;
+        border-bottom: solid #AEAEAE 0.35vw;
+        padding-bottom: 2.5vw;
+    }
+
+    .gozoto_area2 .komidasi {
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .gozoto_area2 .text_box {
+        padding-top: 3vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*召し上がり方
+    =============================================================================召し上がり方 */
+
+
+    .eat_area1 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .eat_area1 .container {
+        padding: 6vw;
+    }
+
+    .eat_area1 .container .box {
+        flex-direction: column;
+        margin-bottom: 8vw;
+    }
+
+    .eat_area1 .container .box .l {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .eat_area1 .container .box .r {
+        width: 70%;
+    }
+
+    .eat_area1 .komidasi {
+        font-size: 4.5vw;
+        border-bottom: solid #AEAEAE 0.35vw;
+        padding-bottom: 3vw;
+        margin-bottom: 8vw;
+
+    }
+
+    .eat_area1 .no {
+        height: 8.5vw;
+        width: 8.5vw;
+        font-size: 5vw;
+    }
+
+    .eat_area1 .komidasi:nth-of-type(2) {
+        margin-top: 32vw;
+    }
+
+    .eat_area2 {
+        padding:  8vw 0;
+    }
+
+    .eat_area2 .box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*西京焼きについて
+    =============================================================================西京焼きについて */
+
+    /* area1----------------------------------------------------------------------------------- */
+
+    .about_area1 {
+        
+        padding: 8vw 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15vw;
+    }
+
+    .about_area1 .midasi_box {
+        margin-top: 8vw;
+    }
+
+    .about_area1 img {
+        width: 20vw;
+        margin-top: 20vw;
+        margin-bottom: 20vw;
+    }
+
+
+
+    /* area2----------------------------------------------------------------------------------- */
+
+    .about_area2 {
+        padding: 12vw 0;
+    }
+
+    .about_area2 .inner {
+        width: 80%;
+    }
+
+    .about_area2 .komidasi {
+        font-size: 4.5vw;
+    }
+
+    .about_area2 .img_1 {
+        width: 85vw;
+        margin: 8vw 0;
+    }
+
+    .about_area2 .title {
+        margin-bottom: 5vw;
+    }
+
+    .about_area2 .btn_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+        width: 100%;
+    }
+
+    .about_area2 .btn {
+        width: 100%;
+        height: 25vw;
+        padding: 3vw;
+        gap: 3vw;
+    }
+
+    .about_area2 .btn .img {
+        height: 18vw;
+        width: 18vw;
+    }
+
+    .about_area2 .btn .yazirusi {
+        bottom: 3vw;
+        right: 3vw;
+    }
+
+    .about_area2 .container {
+        margin: 12vw 0;
+        gap: 5vw;
+        margin-bottom: 0vw;
+    }
+
+    .about_area2 .box {
+        padding: 8vw;
+    }
+
+    .about_area2 .box .naiyou {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about_area2 .box .pass {
+        width: 100%;
+        height: 0.35vw;
+        margin: 8vw 0 8vw 0;
+    }
+
+    .about_area2 .box .naiyou .l {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .about_area2 .box .naiyou .l img {
+        width: 42vw;
+    }
+
+    .about_area2 .box .naiyou p {
+        text-align: center;
+    }
+
+    .about_area2 .komidasi_box {
+        margin-bottom: 5vw;
+    }
+
+    .about_area2 .komidasi_box .no {
+        padding: 0.5vw 5vw;
+        margin-bottom: 3vw;
+    }
+
+    .about_area2 .kokomidasi {
+        font-size: 4.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .about_area2 .container_2 {
+        flex-direction: column;
+        gap: 5vw;
+    }
+
+    .about_area2 .container_2 img {
+        margin-top: 6vw;
+    }
+
+    .about_area2 .box .naiyou_2 {
+        flex-direction: column;
+    }
+
+    .about_area2 .box .naiyou_2 img {
+        width: 100%;
+        margin-top: 6vw;
+    }
+
+    .about_area2 .box .naiyou_2 .l {
+        width: 100%;
+    }
+
+    .about_area2 .naiyou_3 .u {
+        flex-direction: column;
+        gap: 12vw;
+        margin-bottom: 12vw;
+    }
+
+    .about_area2 .naiyou_3 .u .sakana {
+        width: 100%;
+        height: 40vw;
+    }
+
+    .about_area2 .naiyou_3 .u .osusume {
+        width: 25vw;
+        top: -5vw;
+        left: -6vw;
+    }
+
+    .about_area2 .naiyou_3 .name_box {
+        width: 100%;
+    }
+
+    .about_area2 .naiyou_3 .name {
+        font-size: 10vw;
+    }
+
+    .about_area2 .naiyou_3 .name_box img {
+        width: 35vw;
+        top: -5vw;
+    }
+
+    .about_area2 .container .box .naiyou_3:nth-of-type(3) {
+        margin-top: 12vw;
+    }
+
+
+
+    /* area3----------------------------------------------------------------------------------- */
+
+    .about_area3 {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about_area3 .l {
+        width: 100%;
+        margin-left: 0vw;
+        padding: 12vw 0;
+    }
+
+    .about_area3 .box .text {
+        padding: 3.5vw 0 2vw 0;
+        border-bottom: solid #AEAEAE 0.35vw;
+    }
+
+    .about_area3 .r {
+        width: 100vw;
+        transform: translate(-10%);
+    }
+
+
+
+    /* area4----------------------------------------------------------------------------------- */
+
+    .about_area4 {
+        flex-direction: column;
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+
+    /* area5----------------------------------------------------------------------------------- */
+
+
+    .about_area5 {
+        width: 80%;
+        flex-direction: column;
+        padding: 6vw;
+        height: 95vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .about_area5 .midasi_box {
+        width: 100%;
+    }
+
+    .about_area5 .box {
+        width: 100%;
+    }
+
+    .about_area5 .b_more {
+        bottom: -19.5vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*ご利用案内
+    =============================================================================ご利用案内 */
+
+    /* area1----------------------------------------------------------------------------------- */
+
+    .guide_area1 {
+        width: 80%;
+        padding: 8vw 0;
+    }
+
+    .guide_area1 .pack {
+        width: 100%;
+    }
+
+    .guide_area1 .box {
+        gap: 15vw;
+    }
+
+    .guide_area1 .komidasi {
+        font-size: 4.5vw;
+        border-bottom: solid #AEAEAE 0.35vw;
+        padding-bottom: 3vw;
+        margin-bottom: 8vw;
+    }
+
+    .guide_area1 .qa {
+        gap: 5vw;
+        padding: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .guide_area1 .qa .l {
+        width: 8%;
+    }
 }
